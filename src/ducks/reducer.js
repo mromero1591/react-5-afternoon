@@ -36,6 +36,8 @@ const UPDATE_EMAIL = "UPDATE_EMAIL";
 
 
 function reducer(state = initialState, action){
+    console.log('REDUCER HIT: Action ->', action );
+
         switch (action.type) {
             case UPDATE_LOAN_TYPE:
                 return {
@@ -158,69 +160,69 @@ export function updateFound(found) {
     }
 }
 
-export function updateAgent(realEstateAgent) {
+export function updateAgent(agent) {
     return {
-        action: UPDATE_AGENT,
-        payload: realEstateAgent
+        type: UPDATE_AGENT,
+        payload: agent
     }
 }
 export function updateCost(cost) {
     return {
-        action: UPDATE_COST,
+        type: UPDATE_COST,
         payload: cost
     }
 }
 export function updateDownPayment(downPayment) {
     return {
-        action: UPDATE_DOWNPAYMENT,
+        type: UPDATE_DOWNPAYMENT,
         payload: downPayment
     }
 }
 export function updateCredit(credit) {
     return {
-        action: UPDATE_CREDIT,
+        type: UPDATE_CREDIT,
         payload: credit
     }
 }
 export function updateHistory(history) {
     return {
-        action: UPDATE_HISTORY,
+        type: UPDATE_HISTORY,
         payload: history
     }
 }
 export function updateAddressOne(addressOne) {
     return {
-        action: UPDATE_ADDRESS_ONE,
+        type: UPDATE_ADDRESS_ONE,
         payload: addressOne
     }
 }
 export function updateAddressTwo(addressTwo) {
     return {
-        action: UPDATE_ADDRESS_TWO,
+        type: UPDATE_ADDRESS_TWO,
         payload: addressTwo
     }
 }
 export function updateAddressThree(addressThree) {
     return {
-        action: UPDATE_ADDRESS_THREE,
+        type: UPDATE_ADDRESS_THREE,
         payload: addressThree
     }
 }
 export function updateFirstName(firstName) {
     return {
-        action: UPDATE_FIRST_NAME,
+       type: UPDATE_FIRST_NAME,
         payload: firstName
     }
 }
 export function updateLastName(lastName) {
     return {
-        action: UPDATE_LAST_NAME,
+        type: UPDATE_LAST_NAME,
         payload: lastName
     }
 }
 export function updateEmail(email) {
     return {
-        action: UPDATE_EMAIL,
+        type: UPDATE_EMAIL,
         payload: email
     }
 }
